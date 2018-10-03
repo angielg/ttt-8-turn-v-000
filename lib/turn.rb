@@ -30,7 +30,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   user_input = input_to_index(input)
-  until valid_move?(board, user_input) == true
+  while valid_move?(board, user_input) == false
     turn(board)
   end
   move(board, user_input, character = "X")
