@@ -32,6 +32,7 @@ def turn(board)
   user_input = input_to_index(input)
   until valid_move?(board, user_input) == true
     turn(board)
+  end
 end
   
 
