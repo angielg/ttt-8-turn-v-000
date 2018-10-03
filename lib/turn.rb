@@ -33,6 +33,7 @@ def turn(board)
   until valid_move?(board, user_input) == true
     turn(board)
   end
+  move(board, user_input, character = "X")
 end
   
 
